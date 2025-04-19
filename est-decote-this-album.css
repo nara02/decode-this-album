@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header {
+    padding: 16px 0;
+    background-color: #0a1c4f;
+    color: #d55abd
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ec50f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.conteudo-principal {
+    display: flex;
+    gap: 40px;
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+section .container {
+    align-items: flex-start;
+}
+
+
+.grid-album img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px; /* opcional, só pra dar um charme */
+    text-decoration: none;
+}
+
+section .grid-album {
+    padding: 25px 0;
+}
+
+.albuns-favs {
+    flex-basis: 70%;
+    max-width: 70%;
+}
+
+h2 {
+    margin-left: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0a1c4f
+}
+
+h3 {
+    color: #3a1c62;
+}
+.meus-albuns-favs {
+    background-color: #f5f5f5;
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: center;
+    max-height: 80px;
+}
+
+p {
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-albuns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+    gap: 20px; /* espaço entre os cards */
+    max-width: 1000px; 
+    justify-content: center;
+}  
+
+.grid-album {
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.grid-album img {
+    width: 225px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto; /* pra centralizar dentro do card */
+    display: block;
+}
+
+.grid-album h3 {
+    margin: 8px 0 4px;
+    font-size: 18px;
+}
+
+.grid-album p {
+    margin: 0 0 10px;
+    color: #666;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-album a {
+    text-decoration: none;
+    color: white;
+    background-color: #1e1e80;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.grid-album a:hover,
+form button:hover {
+    background-color: #3a3aff;
+}
+
+.sobre-nos {
+    flex-basis: 30%;
+    max-width: 30%;
+    background-color: #f5f5f5;
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.social-links{
+    width: 320px;
+}
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact .container{    
+    display: block;
+}
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+form input,
+form textarea,
+button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+form textarea {
+    resize: none;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
+form button{
+    background-color: #0a1c4f ;
+    color: #f5f5f5;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input:focus, textarea:focus {
+    outline-color: #3a1c62;
+}
+
+.prox-albuns {
+    list-style: none; /* remove as bolinhas */
+    padding: 0;
+    display:flex;
+    width: 450px;
+    height: 450px;
+    gap: 20px;
+    /* opcional, pra alinhar se for horizontal */
+    flex-wrap: wrap; /* se quiser que quebre a linha */
+}
+
+.prox-albuns img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.prox-albuns li {
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    width: 160px; /* ajustável */
+    list-style: none;
+    
+}
+
+footer {
+    background-color: #0a1c4f;
+    color: #f5f5f5;
+    padding: 16px 0;
+    
+}
